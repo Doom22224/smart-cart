@@ -1,6 +1,13 @@
 .block1__bg {
-  background: url(Image/Subtract.svg) left/cover no-repeat;
+  background: url(Image/Subtract.svg) left top/contain no-repeat;
   min-height: 725px;
+}
+
+@media (max-width: 1300px) {
+  .block1__bg {
+    background-size: cover;
+    margin-left: -350px;
+  }
 }
 
 * {
