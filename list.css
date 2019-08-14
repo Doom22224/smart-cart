@@ -1,14 +1,6 @@
-.block1 {
-  min-height: 725px;
-}
-
 .block1__bg {
-  background: url(Image/Subtract.svg) center/contain no-repeat;
+  background: url(Image/Subtract.svg) left/cover no-repeat;
   min-height: 725px;
-}
-
-.block1 p {
-  color: red;
 }
 
 * {
