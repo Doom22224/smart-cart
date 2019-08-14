@@ -1,0 +1,20 @@
+@import "_variables.scss";
+@import "_block1.scss";
+@import "_block2.scss";
+@import "_block3.scss";
+@import "_block4.scss";
+@import "_block5.scss";
+
+* {
+  padding:0;
+  margin:0;
+}
+
+body {
+  font-family:'Montserrat', sans-serif;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 62px;
+}

@@ -1,0 +1,27 @@
+.block1 {
+  min-height: 725px;
+}
+
+.block1__bg {
+  background: url(Image/Subtract.svg) center/contain no-repeat;
+  min-height: 725px;
+}
+
+.block1 p {
+  color: red;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 62px;
+}
+/*# sourceMappingURL=list.css.map */
