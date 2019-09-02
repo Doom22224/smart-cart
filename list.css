@@ -10,6 +10,32 @@
   }
 }
 
+@media (max-width: 769px) {
+  .block1__bg {
+    margin: 0;
+    min-height: 745px;
+    background: url(Image/Subtract-iPad.svg) top left/contain no-repeat;
+  }
+}
+
+@media (max-width: 376px) {
+  .block1__bg {
+    background: url(Image/Subtract-mobileSmaller.svg) top left/contain no-repeat;
+  }
+}
+
+.block2__bg::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 760px;
+  width: 1000px;
+  border-radius: 0 0 0 100px;
+  background: linear-gradient(-10deg, #5DFCE9 -6.71%, #5C54F2 59.24%);
+}
+
 * {
   padding: 0;
   margin: 0;
