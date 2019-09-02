@@ -14,13 +14,13 @@
   .block1__bg {
     margin: 0;
     min-height: 945px;
-    background: url(Image/Subtract-iPad.svg) top left/contain no-repeat;
+    background: url(Image/Subtract-iPad.svg) top left/cover no-repeat;
   }
 }
 
 @media (max-width: 376px) {
   .block1__bg {
-    background: url(Image/Subtract-mobileSmaller.svg) top left/contain no-repeat;
+    background: url(Image/Subtract-mobileSmaller.svg) top left/cover no-repeat;
   }
 }
 
