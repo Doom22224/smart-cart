@@ -11,12 +11,14 @@
 
     @media (max-width: $mobile) {
         margin:0;
+        height: 1024px;
         background: url(Image/Subtract-iPad.svg) top left/cover no-repeat ;
         
     }
 
     @media (max-width: $mobileSmaller) {
-        background: url(Image/Subtract-mobileSmaller.svg) top left/ cover no-repeat ;
+      height: 812px;
+      background: url(Image/Subtract-mobileSmaller.svg) top left/ cover no-repeat ;
     }
   }
 
