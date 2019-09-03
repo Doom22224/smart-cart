@@ -11,7 +11,8 @@
 }
 
 body {
-  
+  height: 100%;
+  width:100%;
   font-family:'Montserrat', sans-serif;
 }
 
@@ -20,4 +21,18 @@ h1 {
   line-height: 60px;
   max-width: 600px;
 
+  @media (max-width: $mobileSmaller) {
+    font-size: 30px;
+    line-height: 34px;
+    max-width: 327px;
+  }
+
+}
+
+.container {
+  margin-left: 20%;
+  
+  @media (max-width: $desktopSmall) {
+    margin-left: 10%;
+  }
 }

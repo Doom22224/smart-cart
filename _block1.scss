@@ -1,21 +1,21 @@
 .block1 {
-  position: relative;
   color: #fff;
+  
 
-  &__bg {
-    background: url(Image/Subtract.svg)   no-repeat;
-    min-height:724px;
-    
-   
+  &__bg{
+    background: url(Image/Subtract.svg) top/cover  no-repeat;
+    min-height: 725px;
+    max-width: 1980px;
+
     @media (max-width: $desktopSmall) {
-      background-size: cover;
-      margin-left: -350px;    
+      background: url(Image/Subtract-step2.svg) top left/cover  no-repeat;
+      min-height: 746px;
+      
     }
 
     @media (max-width: $mobile) {
-        margin:0;
-        background: url(Image/Subtract-iPad.svg) top left/cover no-repeat ;
-        
+      
+      background: url(Image/Subtract-iPad.svg) top left/cover no-repeat ;   
     }
 
     @media (max-width: $mobileSmaller) {
@@ -26,8 +26,12 @@
 
   &__container {
     position: absolute;
-    left: 25%;
+    margin: 0;
     padding-top: 100px;
+
+    @media (max-width: $mobileSmaller) {
+      padding-top: 200px;
+    }
 
   }
 
@@ -36,9 +40,18 @@
     font-size: 16px;
     line-height: 27px;
     max-width: 414px;
+
+    @media (max-width: $mobileSmaller) {
+      max-width: 327px;
+    }
   }
 
   &__headButton {
+    color: #fff;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,5 +61,6 @@
     background: linear-gradient(90deg, #FF5879 -9.48%, #FFAA25 100%);
     box-shadow: 0px 4px 52px rgba(254, 145, 1, 0.36);
     border-radius: 59px;
+    border: none;
   }
 }
