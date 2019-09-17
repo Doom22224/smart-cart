@@ -2,10 +2,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
   color: #fff;
   background: url(Image/Subtract.svg) bottom/cover no-repeat;
   height: 725px;
+  overflow: hidden;
 }
 
 @media (max-width: 1300px) {
@@ -29,7 +29,9 @@
 
 .block1__container {
   margin: 0;
+  margin-right: 17%;
   padding-top: 100px;
+  min-width: 600px;
 }
 
 @media (max-width: 500px) {
@@ -78,9 +80,12 @@
 }
 
 .block1__image {
-  position: absolute;
-  right: -5%;
-  top: -8%;
+  margin-top: -50px;
+}
+
+.block1__image-2 {
+  margin-top: -400px;
+  padding-left: 200px;
 }
 
 .block2__bg::before {

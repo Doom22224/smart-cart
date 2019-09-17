@@ -1,14 +1,12 @@
 .block1 {
   display: flex;
-  
-  position: relative;
   color: #fff;
   background: url(Image/Subtract.svg) bottom/cover  no-repeat;
   height: 725px;
+  overflow: hidden;
   
   @media (max-width: $desktopSmall) {
     background: url(Image/Subtract-step2.svg) bottom /cover  no-repeat;
-    
     
   }
 
@@ -24,7 +22,9 @@
 
   &__container {
     margin: 0;
+    margin-right: 17%;
     padding-top: 100px;
+    min-width: 600px;
 
     @media (max-width: $mobileSmall) {
       padding-top: 200px;
@@ -62,14 +62,11 @@
   }
 
   &__image {
-    position: absolute;
-    right: -5%;
-    top: -8%;
-
-    .img-position {
-      
-      
-      
+    margin-top: -50px;
+    
+    &-2 {
+      margin-top: -400px;
+      padding-left: 200px;
     }
   }
 }
