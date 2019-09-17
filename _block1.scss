@@ -7,27 +7,37 @@
   
   @media (max-width: $desktopSmall) {
     background: url(Image/Subtract-step2.svg) bottom /cover  no-repeat;
-    
+    flex-direction: column;
+
+    @media (max-width: $tablet) {
+      // flex-direction: column;
+
+      @media (max-width: $mobile) {
+        background: url(Image/Subtract-iPad.svg) bottom/cover no-repeat ;   
+      
+        @media (max-width: $mobileSmall) {
+          background: url(Image/Subtract-mobileSmaller.svg) bottom/ cover no-repeat ;
+          margin-top: -100px;
+        }
+      }
+    }
   }
 
-  @media (max-width: $mobile) {
-    
-    background: url(Image/Subtract-iPad.svg) bottom/cover no-repeat ;   
-  }
+  
 
-  @media (max-width: $mobileSmall) {
-    background: url(Image/Subtract-mobileSmaller.svg) bottom/ cover no-repeat ;
-    margin-top: -100px;
-  }
+ 
 
   &__container {
     margin: 0;
-    margin-right: 17%;
+    // margin-right: 17%;
     padding-top: 100px;
     min-width: 600px;
 
     @media (max-width: $mobileSmall) {
+      
       padding-top: 200px;
+      min-width: 300px;
+
     }
 
   }
@@ -62,11 +72,93 @@
   }
 
   &__image {
-    margin-top: -50px;
-    
+    position: relative;
+    margin-top: -40px;
+    text-align: right;
+    width: 100%;
+    height: 100%;
+
+    @media (max-width: $desktopSmall) {
+      margin-top: -400px;
+
+      @media (max-width: $tablet) {
+        margin-top: -230px;
+
+        @media (max-width: $mobile) {
+          margin-top: -80px;
+
+          @media (max-width: $mobileSmall) {
+            margin-top: 130px;
+          }
+        }
+      }
+    }
+
+    &-1 {
+      margin-right: -80px;
+
+      @media (max-width: $desktopSmall) {
+        // margin-right: -190px;
+        // width:150%;
+        // min-width: 314px;
+
+        margin-right: -600px;
+
+        @media (max-width: $tablet) {
+          // margin-top: -250px;
+          margin-right: -220px;
+          max-width: 314px;
+          max-height: 237px;
+
+          @media (max-width: $mobile) {
+            margin-right: -250px;
+
+            @media (max-width: $mobileSmall) {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
     &-2 {
       margin-top: -400px;
-      padding-left: 200px;
+      margin-right: -50px;
+
+      @media (max-width: $desktopSmall) {
+        // margin-right: -100px;
+        // margin-top: 0;
+        // width: 90%;
+        // min-width: 303px;
+
+        margin-right: -200px;
+
+        @media (max-width: $tablet) {
+          width: 10%;
+          margin-right: -70px;
+          min-width: 250px;
+          max-width: 303px;
+
+          @media (max-width: $mobile) {
+            padding-top: 40px;
+
+            @media (max-width: $mobileSmall) {
+              min-width: 200px;
+            
+            }
+          }
+        }
+        
+      }
+    }
+
+    .img-position {
+      // margin-right: -50px;
+
+      @media (max-width: $tablet) {
+      
+      }
+ 
     }
   }
 }
