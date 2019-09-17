@@ -1,35 +1,32 @@
 .block1 {
-  color: #fff;
+  display: flex;
   
+  position: relative;
+  color: #fff;
+  background: url(Image/Subtract.svg) bottom/cover  no-repeat;
+  height: 725px;
+  
+  @media (max-width: $desktopSmall) {
+    background: url(Image/Subtract-step2.svg) bottom /cover  no-repeat;
+    
+    
+  }
 
-  &__bg{
-    background: url(Image/Subtract.svg) top/cover  no-repeat;
-    min-height: 725px;
-    max-width: 1980px;
+  @media (max-width: $mobile) {
+    
+    background: url(Image/Subtract-iPad.svg) bottom/cover no-repeat ;   
+  }
 
-    @media (max-width: $desktopSmall) {
-      background: url(Image/Subtract-step2.svg) top left/cover  no-repeat;
-      min-height: 746px;
-      
-    }
-
-    @media (max-width: $mobile) {
-      
-      background: url(Image/Subtract-iPad.svg) top left/cover no-repeat ;   
-    }
-
-    @media (max-width: $mobileSmaller) {
-      background: url(Image/Subtract-mobileSmaller.svg) top left/ cover no-repeat ;
-      margin-top: -100px;
-    }
+  @media (max-width: $mobileSmall) {
+    background: url(Image/Subtract-mobileSmaller.svg) bottom/ cover no-repeat ;
+    margin-top: -100px;
   }
 
   &__container {
-    position: absolute;
     margin: 0;
     padding-top: 100px;
 
-    @media (max-width: $mobileSmaller) {
+    @media (max-width: $mobileSmall) {
       padding-top: 200px;
     }
 
@@ -41,7 +38,7 @@
     line-height: 27px;
     max-width: 414px;
 
-    @media (max-width: $mobileSmaller) {
+    @media (max-width: $mobileSmall) {
       max-width: 327px;
     }
   }
@@ -62,5 +59,17 @@
     box-shadow: 0px 4px 52px rgba(254, 145, 1, 0.36);
     border-radius: 59px;
     border: none;
+  }
+
+  &__image {
+    position: absolute;
+    right: -5%;
+    top: -8%;
+
+    .img-position {
+      
+      
+      
+    }
   }
 }

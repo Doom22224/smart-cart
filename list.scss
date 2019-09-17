@@ -11,8 +11,10 @@
 }
 
 body {
+  margin: 0 auto;
+  max-width: 1980px;
+
   height: 100%;
-  width:100%;
   font-family:'Montserrat', sans-serif;
 }
 
@@ -21,7 +23,7 @@ h1 {
   line-height: 60px;
   max-width: 600px;
 
-  @media (max-width: $mobileSmaller) {
+  @media (max-width: $mobileSmall) {
     font-size: 30px;
     line-height: 34px;
     max-width: 327px;
