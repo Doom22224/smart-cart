@@ -22,6 +22,7 @@ h1 {
   font-size: 52px;
   line-height: 60px;
   max-width: 600px;
+  font-weight: 800;
 
   @media (max-width: $mobileSmall) {
     font-size: 30px;
@@ -34,6 +35,12 @@ h1 {
     
   }
 
+}
+
+p {
+  font-size: 16px;
+  line-height: 27px;
+  color: #848CA8;
 }
 
 .container {
