@@ -198,9 +198,6 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     margin-top: -50px;
   }
 }
@@ -219,6 +216,13 @@
 @media (max-width: 769px) {
   .block2__image {
     width: 80%;
+    left: 10%;
+  }
+}
+
+@media (max-width: 769px) and (max-width: 376px) {
+  .block2__image {
+    bottom: -70px;
   }
 }
 
@@ -230,8 +234,14 @@
   margin-top: -200px;
 }
 
+@media (max-width: 1044px) {
+  .block2__image-2 {
+    margin-top: -280px;
+  }
+}
+
 .block2__info {
-  margin-left: 62px;
+  margin-left: 10%;
   text-align: left;
   max-width: 480px;
 }
@@ -251,6 +261,12 @@
 .block2__border {
   margin-left: 70px;
   color: #837DFF;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  background: linear-gradient(45deg, #5D88FC 5%, #A35DFD 15% 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .block2__border::after {

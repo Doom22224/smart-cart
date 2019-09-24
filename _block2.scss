@@ -6,17 +6,24 @@
 
   @media (max-width: $tablet) {
     flex-direction: column;
-    align-items: center;
+    
     margin-top: -50px;
+    
   }
 
   &__image {
-        display: flex;
+    display: flex;
     flex-direction: column;
     position: relative;
 
     @media (max-width: $mobile) {
       width: 80%;
+      left:10%;
+
+      @media (max-width:$mobileSmaller) {
+        bottom: -70px;
+        
+      }
     }
     
     &-1 {
@@ -26,11 +33,15 @@
     &-2 {
       
       margin-top: -200px;
+
+      @media (max-width:$tablet) {
+        margin-top: -280px;
+      }
     }
   }
 
   &__info {
-    margin-left: 62px;
+    margin-left: 10%;
     text-align: left;
     max-width:480px ;
 
@@ -46,6 +57,12 @@
   &__border {
     margin-left: 70px;
     color: #837DFF;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    background: linear-gradient( 45deg ,  #5D88FC 5%, #A35DFD 15% 100%) ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
     &::after {
       content: "";
