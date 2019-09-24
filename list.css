@@ -182,12 +182,6 @@
 }
 
 .block2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   text-align: center;
   margin-top: 200px;
 }
@@ -234,9 +228,15 @@
   margin-top: -200px;
 }
 
-@media (max-width: 1044px) {
+@media (max-width: 1300px) {
   .block2__image-2 {
     margin-top: -280px;
+  }
+}
+
+@media (max-width: 1300px) and (max-width: 500px) {
+  .block2__image-2 {
+    margin-top: -300px;
   }
 }
 
@@ -249,12 +249,6 @@
 @media (max-width: 500px) {
   .block2__info {
     max-width: 327px;
-  }
-}
-
-@media (max-width: 500px) and (max-width: 376px) {
-  .block2__info {
-    margin-left: 20px;
   }
 }
 
@@ -281,11 +275,98 @@
 
 .block2__bold {
   font-weight: bold;
-  margin: 30px 0 10px 0;
+  margin-bottom: -20px;
 }
 
 .block3 {
-  margin: 200px;
+  margin-top: 100px;
+}
+
+.block3__border::after {
+  content: '';
+  display: inline-block;
+  background: #837DFF;
+  height: 4px;
+  width: 42px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+.block3__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+  list-style: none;
+  margin-top: 16px;
+  width: 760px;
+}
+
+.block3__empty {
+  width: 228px;
+  min-height: 166px;
+}
+
+.block3__item {
+  width: 228px;
+  min-height: 166px;
+  margin: 0 24px 24px 0;
+  border-radius: 7.20678px;
+  -webkit-box-shadow: 0px 3.20301px 35.2332px rgba(89, 84, 190, 0.07);
+          box-shadow: 0px 3.20301px 35.2332px rgba(89, 84, 190, 0.07);
+}
+
+.block3__item-textColor {
+  width: 121px;
+  font-size: 14px;
+  line-height: 17px;
+  margin-top: 30px;
+  color: #837DFF;
+  font-weight: 600;
+}
+
+.block3__item-text {
+  font-size: 13px;
+  line-height: 15px;
+  width: 180px;
+  margin-left: 24px;
+}
+
+.block3__item-position {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.block3__item-icon {
+  margin: 30px 15px 15px 20px;
+}
+
+.block3__image {
+  width: 600px;
+  height: 679px;
+  margin-left: -150px;
+  margin-top: -200px;
+  text-align: right;
+}
+
+.block3__image-fix {
+  position: relative;
+}
+
+.block3__image-1 {
+  right: -150px;
+}
+
+.block3__image-2 {
+  right: -450px;
+  top: -330px;
+}
+
+.block3__image-3 {
+  top: -550px;
+  left: -30px;
 }
 
 * {
@@ -322,6 +403,7 @@ h1 {
 }
 
 p {
+  margin-top: 20px;
   font-size: 16px;
   line-height: 27px;
   color: #848CA8;
@@ -335,5 +417,14 @@ p {
   .container {
     margin-left: 10%;
   }
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=list.css.map */

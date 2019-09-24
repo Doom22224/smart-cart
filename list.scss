@@ -38,6 +38,7 @@ h1 {
 }
 
 p {
+  margin-top: 20px;
   font-size: 16px;
   line-height: 27px;
   color: #848CA8;
@@ -50,3 +51,42 @@ p {
     margin-left: 10%;
   }
 }
+
+section {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+
+
+// &__image {
+//   width:600px ;
+//   height: 679px;
+//   margin-left: -200px;
+//   margin-top: -200px;
+//   text-align: right;
+
+//   &-fix {
+//     position: relative;
+//     width: 100%;
+//   }
+
+//   &-1 {
+    
+//     right:-150px;
+//   }
+
+//   &-2 {
+//     right:-360px;
+//     top: -260px;
+//   }
+
+//   &-3 {
+//     top: -440px;
+    
+  
+//   }
+// }
