@@ -320,7 +320,8 @@
 
 @media (max-width: 1300px) and (max-width: 540px) {
   .block3__container {
-    margin-left: 10%;
+    margin-left: 0;
+    padding: 0 24px;
   }
 }
 
@@ -353,7 +354,7 @@
 
 @media (max-width: 1044px) and (max-width: 540px) {
   .block3__list {
-    max-width: 327px;
+    width: 100%;
   }
 }
 
@@ -379,7 +380,7 @@
 
 @media (max-width: 540px) {
   .block3__item {
-    width: 327px;
+    width: 100%;
     margin: 0;
   }
 }
@@ -412,7 +413,7 @@
 
 @media (max-width: 540px) {
   .block3__item-text {
-    width: 200px;
+    width: 80%;
   }
 }
 

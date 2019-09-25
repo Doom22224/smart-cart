@@ -13,8 +13,9 @@
     @media (max-width: $desktopSmall) {
     margin-left: $margin;
      
-    @media (max-width:$mobileSmall) {
-        margin-left: $marginSmall;
+      @media (max-width:$mobileSmall) {
+        margin-left: 0;
+        padding: 0 24px;
       }
     }
   
@@ -42,7 +43,7 @@
 
       @media (max-width:$mobileSmall) {
         
-        max-width: 327px;
+        width: 100%;
       }
     }
 
@@ -65,7 +66,7 @@
     box-shadow: 0px 3.20301px 35.2332px rgba(89, 84, 190, 0.07);
 
     @media (max-width:$mobileSmall) {
-      width:327px;
+      width:100%;
       margin: 0
     }
 
@@ -94,7 +95,7 @@
       margin-top: 10px;
 
       @media (max-width:$mobileSmall) {
-        width:200px;
+        width:80%;
         
       }
     }
