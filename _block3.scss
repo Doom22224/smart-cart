@@ -1,6 +1,24 @@
 .block3 {
+  display: flex;
+  justify-content: center;
+  margin-top: -100px;
+  padding-top: 300px;
+
+  @media (max-width:$tablet) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  &__container {
+    @media (max-width: $desktopSmall) {
+    margin-left: $margin;
+     
+    @media (max-width:$mobileSmall) {
+        margin-left: $marginSmall;
+      }
+    }
   
-margin-top: 100px;
+  }
 
   &__border::after {
     content:'';
@@ -14,17 +32,29 @@ margin-top: 100px;
 
   &__list {
     display: flex;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
     list-style: none;
     margin-top: 16px;
     width: 760px;
 
+    @media (max-width: $tablet) {
+      width: 510px;
+
+      @media (max-width:$mobileSmall) {
+        
+        max-width: 327px;
+      }
+    }
 
   }
 
   &__empty {
     width:228px;
     min-height: 166px;
+
+    @media (max-width: $tablet) {
+      display: none;
+    }
   }
 
   &__item {
@@ -34,56 +64,105 @@ margin-top: 100px;
     border-radius: 7.20678px;
     box-shadow: 0px 3.20301px 35.2332px rgba(89, 84, 190, 0.07);
 
+    @media (max-width:$mobileSmall) {
+      width:327px;
+      margin: 0
+    }
+
     &-textColor  {
       width: 121px;
       font-size: 14px;
       line-height: 17px;
-      margin-top: 30px;
+      margin: 0;
+      margin: auto 0;
       color: #837DFF;
       font-weight: 600;
+
+      @media (max-width:$mobileSmall) {
+        width:140px;
+        
+      }
     }
 
     &-text {
+      vertical-align: top;
       font-size: 13px;
       line-height: 15px;
       width: 180px;
+      margin: 0;
       margin-left: 24px;
+      margin-top: 10px;
+
+      @media (max-width:$mobileSmall) {
+        width:200px;
+        
+      }
     }
 
     &-position {
       display: flex;
-      
+      height: 70px;
     }
 
     &-icon {
-      margin: 30px 15px 15px 20px;
+      margin: 0 16px 0 20px;
     }
   }
 
   &__image {
+    position: relative;
     width:600px ;
-    height: 679px;
-    margin-left: -150px;
-    margin-top: -200px;
-    text-align: right;
+    height: 690px;
+    right:-500px;
+    top: -200px;
+    margin-right: -300px;
+
+    @media (max-width:$tablet) {
+      top:0px;
+      right: -950px;
+      margin-top: -300px;
+
+      @media (max-width:$mobileSmall) {
+        right: -400px;
+        top: 300px;
+      }
+    }
 
     &-fix {
-      position: relative;
+      position: absolute;
+      
     }
 
     &-1 {
-      right:-150px;
+      top: 0px;
+      right: 350px;
+
+      @media (max-width:$mobileSmall) {
+        width: 50%;
+        right: 600px;
+      }
     }
 
     &-2 {
-      right:-450px;
-      top: -330px;
+      top: 90px;
+      right: 120px;
+      
+      @media (max-width:$mobileSmall) {
+        right: 500px;
+        top: 30px;
+        width: 50%;
+      }
     }
 
     &-3 {
-      top: -550px;
-      left: -30px;
+     right:520px;
+     top: 300px;
     
+      @media (max-width:$mobileSmall) {
+        right: 680px;
+        top: 110px;
+        width: 50%;
+      }
     }
   }
 

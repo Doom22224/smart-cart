@@ -37,6 +37,14 @@ h1 {
 
 }
 
+section {
+  overflow: hidden;
+
+  @media (max-width:$mobile) {
+
+  }
+}
+
 p {
   margin-top: 20px;
   font-size: 16px;
@@ -48,13 +56,12 @@ p {
   margin-left: 20%;
   
   @media (max-width: $desktopSmall) {
-    margin-left: 10%;
-  }
-}
+    margin-left: $margin;
 
-section {
-  display: flex;
-  justify-content: center;
+    @media (max-width:$mobileSmall) {
+      margin-left: $marginSmall;
+    }
+  }
 }
 
 

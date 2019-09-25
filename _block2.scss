@@ -1,5 +1,6 @@
 .block2 {
-  
+  display: flex;
+  justify-content: center;
   text-align: center;
   margin-top: 200px;
 
@@ -19,10 +20,15 @@
       width: 80%;
       left:10%;
 
-      @media (max-width:$mobileSmaller) {
+      @media (max-width:$mobileSmall) {
+        margin-left: $marginSmall;
+
+        @media (max-width:$mobileSmaller) {
         bottom: -70px;
         
+        }
       }
+      
     }
     
     &-1 {
@@ -44,12 +50,13 @@
   }
 
   &__info {
-    margin-left: 10%;
+    margin-left: $margin;
     text-align: left;
     max-width:480px ;
 
     @media (max-width: $mobileSmall) {
       max-width: 327px;
+      margin-left: $marginSmall;
     }
   }
 
