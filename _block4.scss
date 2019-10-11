@@ -1,5 +1,4 @@
 .block4 {
-
     padding-top: 200px;
     
     &__head {
@@ -18,6 +17,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+
     }
 
     &__headInfo {
@@ -63,10 +63,16 @@
       list-style: none;
       margin-top: 50px;
       flex-wrap: wrap;
-      display: flex;
+      max-width: 1000px;
 
       @media (max-width: $tablet) {
-        flex-direction: column; 
+        max-width: 700px;
+        padding-left: 60px;
+
+        @media (max-width: $mobile) {
+          padding-left: 0;
+          justify-content: center;
+        }
       }
     }
 
@@ -82,15 +88,15 @@
 
       &::before {
         content:'';
-        background: url(Image/Ellipse.svg) center/120% no-repeat;
+        background: url(Image/Ellips.svg) center no-repeat;
         position: absolute;
         display: flex;
         justify-content: center;
         align-self: center;
-        top: -75px;
-        left: -20px;
-        width: 80px; 
-        height: 80px; 
+        top: -125px;
+        left: -50px;
+        width: 160px; 
+        height: 160px; 
         border-radius: 50%;
 
         @media (max-width: $mobile) {
@@ -109,10 +115,10 @@
         font-size: 32px;
         line-height: 43px;
         position: absolute;
-        width: 80px; 
-        height: 80px;
-        top: -80px;
-        left: -20px;
+        width: 160px; 
+        height: 160px;
+        top: -129px;
+        left: -50px;
         
         counter-increment: list;
         content: counter(list);
