@@ -21,7 +21,7 @@
       left:10%;
 
       @media (max-width:$mobileSmall) {
-        margin-left: $marginSmall;
+        // margin-left: $marginSmall;
 
         @media (max-width:$mobileSmaller) {
         bottom: -70px;
@@ -62,7 +62,7 @@
   }
 
   &__border {
-    margin-left: 70px;
+    margin-left: 60px;
     color: #837DFF;
     font-weight: 600;
     font-size: 14px;
@@ -70,6 +70,8 @@
     background: linear-gradient( 45deg ,  #5D88FC 5%, #A35DFD 15% 100%) ;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin-bottom: 15px;
+
 
     &::after {
       content: "";

@@ -1,5 +1,5 @@
 .block4 {
-    padding-top: 200px;
+    padding-top:10px;
     
     &__head {
       max-width: 653px; 
@@ -13,7 +13,7 @@
     }
 
     &__container {
-      padding: 24px;
+      margin-left: 10%;
       display: flex;
       flex-direction: column;
       align-items: center;
