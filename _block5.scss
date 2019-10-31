@@ -7,12 +7,15 @@
   overflow: hidden;
   margin-left: 50px;
 
-  @media (max-width: $mobileSmall) {
-    
-    background: url(Image/Subtract-bottom2.svg) bottom/cover  no-repeat;
+  @media (max-width: $desktopWideW){
+    background-position: bottom;
+    margin-left: 0px;
 
+    @media (max-width: $mobileSmall) {
+
+      background: url(Image/Subtract-bottom2.svg) bottom/cover  no-repeat;
+    }
   }
-
 
   &__container {
     display: flex;
@@ -31,8 +34,50 @@
   }
 
   &__button {
+    position: absolute;
+    right: 0;
+    font-family: inherit;
     background: linear-gradient(90deg, #FFAA25 -167.93%, #FFAA25 100%);
+    
     box-shadow: 0px 4px 52px rgba(254, 145, 1, 0.36);
     border-radius: 59px;
+    border: none;
+    width:180px ;
+    height: 50px;
+    font-size: 16px;
+    line-height: 15px;
+    color: #fff;
+    font-weight: bold;
+    
   }
+
+  &__mail {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+    border-radius: 25px;
+    height: 50px;
+    width: 480px ;
+    margin-bottom: 140px;
+    padding-left: 24px;
+   
+    
+  }
+
+  &__mailForm {
+    vertical-align: middle;
+    height: 30px;
+    border: none;
+    outline:none;
+    padding-left: 24px;
+
+    &:hover{
+      border: none;
+      outline: none;
+      background: #fff;
+    }
+  }
+
+
 }
