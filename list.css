@@ -840,4 +840,14 @@ p {
     margin-left: 10%;
   }
 }
+
+.page {
+  text-align: center;
+  margin: 20px;
+  margin-bottom: 70px;
+}
+
+.site {
+  color: red;
+}
 /*# sourceMappingURL=list.css.map */
