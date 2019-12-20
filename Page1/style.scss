@@ -1,0 +1,72 @@
+@import "_variable.scss";
+@import "_block1.scss";
+@import "_block2.scss";
+@import "_block3.scss";
+@import "_block4.scss";
+
+* {
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 100%;
+  background: #f2f2f2; 
+  font-family:'Montserrat', sans-serif;
+}
+
+.container {
+  padding: 24px 14px 24px 14px;
+
+}
+
+h1 {
+  font-size: 54px;
+
+  @media (max-width:$tablet) {
+    font-size: 34px;
+  }
+}
+
+h2 {
+  font-size: 32px;
+
+  font-weight: normal;
+
+  @media(max-width:$mobileSmall) {
+    font-size: 22px;
+  }
+}
+
+h3 {
+  font-size: 24px;
+}
+
+.white {
+  width:100%;
+  background: #fff;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  font-family: inherit;
+}
+
+input {
+  font-family: inherit;
+}
+
+textarea {
+  font-family: inherit;
+}
